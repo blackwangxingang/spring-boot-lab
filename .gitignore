@@ -2,6 +2,9 @@
 # 每个模块下编译产生的target目录都不纳入git管理
 **/target/
 
+# 子模块的 gitignore 文件
+**/.gitignore
+
 ### IntelliJ IDEA ###
 .idea/
 .idea/modules.xml
