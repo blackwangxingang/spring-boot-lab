@@ -3,20 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>pers.xingang</groupId>
+        <artifactId>spring-boot-lab</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>pers.xingang</groupId>
-    <artifactId>spring-boot-lab</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>lab-00-initialize</module>
-        <module>lab-01-autoconfigure</module>
-        <module>lab-02-publisher-listener</module>
-        <module>lab-00-Demo</module>
-        <module>lab-03</module>
-        <module>lab-04</module>
-    </modules>
+    <artifactId>lab-04</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -24,12 +17,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- 所有子模块都需要使用的依赖 -->
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.3.12.RELEASE</version>
         </dependency>
     </dependencies>
 
